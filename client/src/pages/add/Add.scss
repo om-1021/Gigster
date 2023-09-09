@@ -1,0 +1,94 @@
+.add {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+
+    h1 {
+      width: max-content;
+      margin-bottom: 30px;
+      color: gray;
+      font-weight: 300;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+
+      label {
+        color: gray;
+        font-size: 18px;
+      }
+
+      .info,
+      .details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+
+        input,
+        select,
+        textarea {
+          padding: 20px;
+          border-radius: 20px;
+        }
+
+        .images {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .imagesInputs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+        }
+
+        button {
+          width: 100px;
+          height: 60px;
+          border: none;
+          background-color: #ff4533;
+          color: white;
+          align-self: flex-end;
+          cursor: pointer;
+          border-radius: 10px;
+          font-size: 16px;
+        }
+
+        .add {
+          display: flex;
+          justify-content: space-between;
+
+          input {
+            width: 80%;
+          }
+        }
+
+        .addedFeatures {
+          display: flex;
+          gap: 20px;
+
+          button {
+            height: 30px;
+            font-size: 12px;
+            font-weight: 400;
+            background: transparent;
+            color: red;
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.gigs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+
+  .container {
+    width: 1400px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      color: #f8efe5;
+
+      .currency-dropdown {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        top: 10px;
+
+        span {
+          color: #f8efe5;
+          font-weight: 300;
+        }
+      }
+
+      select {
+        padding: 5px;
+        background-color: #f8efe5;
+        color: #000;
+        font-weight: 500;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .breadcrumbs {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: #f8efe5;
+    }
+
+    h1 {
+      color: #f8efe5;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: #f8efe5;
+      font-weight: 300;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 30px;
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #f8efe5;
+        font-weight: 300;
+
+        input {
+          padding: 5px;
+          border-radius: 5px;
+          outline: none;
+
+          &::placeholder {
+            color: #999;
+          }
+        }
+
+        button {
+          padding: 5px 10px;
+          background-color: #ff4533;
+          color: white;
+          border: none;
+          font-weight: 500;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+
+      .right {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        label {
+          color: #f8efe5;
+          margin-right: 5px;
+        }
+
+        .sortBy {
+          color: #f8efe5;
+          font-weight: 300;
+        }
+
+        .sortType {
+          font-weight: 500;
+          color: #f8efe5;
+        }
+
+        img {
+          width: 15px;
+          cursor: pointer;
+        }
+
+        .rightMenu {
+          padding: 20px;
+          background-color: white;
+          border: 0.5px solid lightgrey;
+          border-radius: 5px;
+          position: absolute;
+          top: 30px;
+          right: 0;
+          z-index: 9;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          color: #555;
+
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .loader{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 50vh;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 80px;
+    }
+  }
+}
